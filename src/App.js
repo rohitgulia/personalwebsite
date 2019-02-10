@@ -8,6 +8,8 @@ import {HashRouter} from 'react-router-dom';
 import Paper from '@material-ui/core/Paper';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+import MenuAppBar from './Pages/AppMenu/MenuAppBar';
+import { BrowserRouter } from 'react-router-dom';
 
 const styles = theme => ({
     root: {
@@ -22,14 +24,9 @@ class App extends Component {
       const { classes } = this.props;
     return (
       <div className="App">
-          <HashRouter>
-          <Switch>
-              <Paper className={classes.root} elevation={1}>
-                <Route exact path='/' component={bio}/>
-                <Route path='/interests' component={interests}/>
-              </Paper>
-          </Switch>
-          </HashRouter>
+          <BrowserRouter>
+            <MenuAppBar />
+          </BrowserRouter>
       </div>
     );
   }
