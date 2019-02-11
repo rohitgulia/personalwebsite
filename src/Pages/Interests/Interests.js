@@ -65,10 +65,10 @@ class Interests extends React.Component {
                     <ExpansionPanelDetails>
                         <Reveal animated='move right'>
                             <Reveal.Content visible>
-                                <Image src='/static/images/race1.jpg' size='small' />
+                                <Image src='/personalwebsite/static/images/race1.jpg' size='small' />
                             </Reveal.Content>
                             <Reveal.Content hidden>
-                                <Image src='/static/images/race2.jpg' size='small' />
+                                <Image src='/personalwebsite/static/images/race2.jpg' size='small' />
                             </Reveal.Content>
                         </Reveal>
                         <Typography>

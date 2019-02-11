@@ -93,10 +93,10 @@ class Bio extends Component {
 
                     <Reveal animated='rotate'>
                         <Reveal.Content visible>
-                            <Avatar alt="Rohit Singh Gulia" src="/static/images/profilePic.jpg" className={classes.bigAvatar} />
+                            <Avatar alt="Rohit Singh Gulia" src="/personalwebsite/static/images/profilePic.jpg" className={classes.bigAvatar} />
                         </Reveal.Content>
                         <Reveal.Content hidden>
-                            <Avatar alt="Rohit Singh Gulia" src="/static/images/race3.jpg" className={classes.bigAvatar} />
+                            <Avatar alt="Rohit Singh Gulia" src="/personalwebsite/static/images/race3.jpg" className={classes.bigAvatar} />
                         </Reveal.Content>
                     </Reveal>
                 </Grid>
@@ -122,7 +122,7 @@ class Bio extends Component {
                 <Card className={classes.card}>
                     <CardHeader
                         avatar={
-                            <Avatar alt="Weapon" src="/static/images/weapon.jpg" className={classes.avatar} />
+                            <Avatar alt="Weapon" src="/personalwebsite/static/images/weapon.jpg" className={classes.avatar} />
                         }
                         title="Weapons of choice"
                     />
@@ -152,7 +152,7 @@ class Bio extends Component {
                 <Card className={classes.card}>
                     <CardHeader
                         avatar={
-                            <Avatar alt="Weapon" src="/static/images/office.png" className={classes.avatar} />
+                            <Avatar alt="Weapon" src="/personalwebsite/static/images/office.png" className={classes.avatar} />
                         }
                         title="Work Experience"
                     />
@@ -259,7 +259,7 @@ class Bio extends Component {
                 <Card className={classes.card}>
                     <CardHeader
                         avatar={
-                            <Avatar alt="Weapon" src="/static/images/recommendation.jpg" className={classes.avatar} />
+                            <Avatar alt="Weapon" src="/personalwebsite/static/images/recommendation.jpg" className={classes.avatar} />
                         }
                         title="Recommendation"
                     />
@@ -302,7 +302,7 @@ class Bio extends Component {
                     <Card className={classes.card}>
                         <CardHeader
                             avatar={
-                                <Avatar alt="Weapon" src="/static/images/education.png" className={classes.avatar} />
+                                <Avatar alt="Weapon" src="/personalwebsite/static/images/education.png" className={classes.avatar} />
                             }
                             title="Education"
                         />

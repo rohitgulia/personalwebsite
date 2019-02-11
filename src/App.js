@@ -24,9 +24,9 @@ class App extends Component {
       const { classes } = this.props;
     return (
       <div className="App">
-          <BrowserRouter>
+          <HashRouter>
             <MenuAppBar />
-          </BrowserRouter>
+          </HashRouter>
       </div>
     );
   }
