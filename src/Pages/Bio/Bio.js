@@ -273,7 +273,9 @@ class Bio extends Component {
                         </Typography>
                         <Link href={'https://www.linkedin.com/in/davidcampodonico/'} className={classes.link} target="_blank" rel="noopener"> - David Campodonico, MBA </Link>
 
+                        <br/>
                         <Divider />
+                        <br/>
 
                         <Typography variant="body1" gutterBottom>
                         It was a pleasure having Rohit work on my team. He has a strong work ethic and was a great team player.
@@ -282,7 +284,9 @@ class Bio extends Component {
                         </Typography>
                         <Link href={'https://www.linkedin.com/in/lisa-thomas-66b68962/'} className={classes.link} target="_blank" rel="noopener">  - Lisa Thomas </Link>
 
+                        <br/>
                         <Divider />
+                        <br/>
 
                         <Typography variant="body1" gutterBottom>
                             I had the pleasure of working with Rohit at UPS. I was particularly impressed by Rohit’s ability to handle even the toughest assignments—and effortlessly.
