@@ -7,9 +7,9 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import interests from "../Interests/interests";
+import Interests from "../Interests/Interests";
 import { Switch, Route } from 'react-router-dom';
-import bio from '../Bio/bio';
+import Bio from '../Bio/Bio';
 import {HashRouter} from 'react-router-dom';
 import Paper from '@material-ui/core/Paper';
 import List from '@material-ui/core/List';
@@ -55,12 +55,12 @@ class MenuAppBar extends Component {
         const sideList = (
             <div className={classes.list}>
                 <List>
-                    <ListItem button key={'Home'} onClick={() => this.props.history.push('bio')}>
+                    <ListItem button key={'Home'} onClick={() => this.props.history.push('Bio')}>
                         <ListItemIcon> <Home /> </ListItemIcon>
                         <ListItemText primary={'Home'} />
                     </ListItem>
 
-                    <ListItem button key={'Running'} onClick={() => this.props.history.push('/interests')}>
+                    <ListItem button key={'Running'} onClick={() => this.props.history.push('/Interests')}>
                         <ListItemIcon> <DirectionsRun /> </ListItemIcon>
                         <ListItemText primary={'Running'} />
                     </ListItem>
@@ -81,9 +81,9 @@ class MenuAppBar extends Component {
 
                     <Switch>
                         <Paper className={classes.root} elevation={1}>
-                            <Route exact path='/' component={bio}/>
-                            <Route exact path='/bio' component={bio}/>
-                            <Route path='/interests' component={interests}/>
+                            <Route exact path='/' component={Bio}/>
+                            <Route exact path='/bio' component={Bio}/>
+                            <Route path='/interests' component={Interests}/>
                         </Paper>
                     </Switch>
 

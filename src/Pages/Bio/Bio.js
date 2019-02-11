@@ -24,6 +24,9 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 import ListItemText from '@material-ui/core/ListItemText';
+import { Reveal } from 'semantic-ui-react';
+import Link from '@material-ui/core/Link';
+import Divider from '@material-ui/core/Divider';
 
 const styles = theme => ({
     avatar: {
@@ -35,7 +38,7 @@ const styles = theme => ({
         height: 200,
     },
     card: {
-        minWidth: 275,
+        maxWidth: 450
     },
     bullet: {
         display: 'inline-block',
@@ -67,14 +70,15 @@ const styles = theme => ({
     },
     margin: {
         marginBottom: 10
-    },root: {
+    },
+    root: {
         width: '100%',
-        maxWidth: 360,
+        maxWidth: 500,
         backgroundColor: theme.palette.background.paper,
-    }
+    },
 });
 
-class bio extends Component {
+class Bio extends Component {
     state = { expanded: false };
 
     handleExpandClick = () => {
@@ -86,13 +90,23 @@ class bio extends Component {
         return (
             <div>
                 <Grid container justify="center" alignItems="center">
-                    <Avatar alt="Rohit Singh Gulia" src="/static/images/profilePic.jpg" className={classes.bigAvatar} />
+
+                    <Reveal animated='rotate'>
+                        <Reveal.Content visible>
+                            <Avatar alt="Rohit Singh Gulia" src="/static/images/profilePic.jpg" className={classes.bigAvatar} />
+                        </Reveal.Content>
+                        <Reveal.Content hidden>
+                            <Avatar alt="Rohit Singh Gulia" src="/static/images/race3.jpg" className={classes.bigAvatar} />
+                        </Reveal.Content>
+                    </Reveal>
                 </Grid>
                 <Grid container justify="center" alignItems="center" className={classes.margin}>
                     <Button circular color='facebook' icon='facebook' href={"https://www.facebook.com/rohit.gulia.54"} target="_blank"/>
                     <Button circular color='linkedin' icon='linkedin' href={"https://www.linkedin.com/in/rohitgulia"} target="_blank"/>
                     <Button circular color='github' icon='github' href={"https://github.com/rohitgulia"} target="_blank"/>
                 </Grid>
+
+                <Grid container justify="center" alignItems="center">
                 <Card className={classes.card}>
                     <CardContent>
                         <Typography variant="h5" component="h2">
@@ -102,7 +116,9 @@ class bio extends Component {
                         </Typography>
                     </CardContent>
                 </Card>
+                </Grid>
 
+                <Grid container justify="center" alignItems="center">
                 <Card className={classes.card}>
                     <CardHeader
                         avatar={
@@ -130,7 +146,9 @@ class bio extends Component {
                     <CardActions className={classes.actions} disableActionSpacing>
                     </CardActions>
                 </Card>
+                </Grid>
 
+                <Grid container justify="center" alignItems="center">
                 <Card className={classes.card}>
                     <CardHeader
                         avatar={
@@ -144,7 +162,7 @@ class bio extends Component {
                             Limosys Software
                         </Typography>
                         <Typography className={classes.pos} color="textSecondary">
-                            Full Stack Developer
+                            Full Stack Developer (2016 - Current)
                         </Typography>
                         <Grid
                             container
@@ -194,7 +212,7 @@ class bio extends Component {
                             UPS
                         </Typography>
                         <Typography className={classes.pos} color="textSecondary">
-                            Intern
+                            Intern (2015-2016)
                         </Typography>
                         <Grid
                             container
@@ -235,7 +253,9 @@ class bio extends Component {
                     <CardActions className={classes.actions} disableActionSpacing>
                     </CardActions>
                 </Card>
+                </Grid>
 
+                <Grid container justify="center" alignItems="center">
                 <Card className={classes.card}>
                     <CardHeader
                         avatar={
@@ -245,21 +265,74 @@ class bio extends Component {
                     />
 
                     <CardContent>
-                        coming soon..
+                        <Typography variant="body1" gutterBottom>
+                        Rohit and I collaborative very closely while I was at limosys and were able to establish a thorough communications management
+                        plan with major stakeholders to ensure project success and client satisfaction. Rohit also touched on and completed many ad HOC
+                        projects with little to no supervision’s and was truly an asset to our development team. I wish him the best and hope we can work
+                        again in the future. He is truly divine to work with and a true team player on any team.
+                        </Typography>
+                        <Link href={'https://www.linkedin.com/in/davidcampodonico/'} className={classes.link} target="_blank" rel="noopener"> - David Campodonico, MBA </Link>
+
+                        <Divider />
+
+                        <Typography variant="body1" gutterBottom>
+                        It was a pleasure having Rohit work on my team. He has a strong work ethic and was a great team player.
+                        He played a major role with testing a software application to make sure it was compatible with the new Windows 10 operating system.
+                        He also provided technical assistance for the entire QA testing team.
+                        </Typography>
+                        <Link href={'https://www.linkedin.com/in/lisa-thomas-66b68962/'} className={classes.link} target="_blank" rel="noopener">  - Lisa Thomas </Link>
+
+                        <Divider />
+
+                        <Typography variant="body1" gutterBottom>
+                            I had the pleasure of working with Rohit at UPS. I was particularly impressed by Rohit’s ability to handle even the toughest assignments—and effortlessly.
+                            At UPS, WorldShip is a very complex application and it takes months to develop the level of skills that Rohit developed within a very short period of time.
+                            During very stressful testing period, I could always count on Rohit to complete his assigned tasks and even ask for more assignments! Rohit earns my highest recommendation.
+                        </Typography>
+                        <Link href={'https://www.linkedin.com/in/anamul-hasan-107b6643/'} className={classes.link} target="_blank" rel="noopener"> - Anamul Hasan </Link>
+
+
                     </CardContent>
                     <CardActions className={classes.actions} disableActionSpacing>
                     </CardActions>
                 </Card>
+                </Grid>
+
+                <Grid container justify="center" alignItems="center">
+                    <Card className={classes.card}>
+                        <CardHeader
+                            avatar={
+                                <Avatar alt="Weapon" src="/static/images/education.png" className={classes.avatar} />
+                            }
+                            title="Education"
+                        />
+
+                        <CardContent>
+                            <Typography component="p">
+                                Masters of Science in Computer Science - New Jersey Institute of Technology
+                            </Typography>
+                            <br/>
+                                <Divider />
+                            <br/>
+                            <Typography component="p">
+                                Bachelor of Engineering in Computer Engineering - Pune University
+                            </Typography>
+
+                        </CardContent>
+                        <CardActions className={classes.actions} disableActionSpacing>
+                        </CardActions>
+                    </Card>
+                </Grid>
 
             </div>
         );
 }
 }
 
-bio.propTypes = {
+Bio.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(bio)
+export default withStyles(styles)(Bio)
 
 
