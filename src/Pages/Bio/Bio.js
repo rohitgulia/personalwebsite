@@ -27,6 +27,39 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { Reveal } from 'semantic-ui-react';
 import Link from '@material-ui/core/Link';
 import Divider from '@material-ui/core/Divider';
+import { Parallax } from 'react-scroll-parallax';
+
+
+
+const P1 = {
+    bounds: [134, 281],
+    forms: [
+        <svg viewBox="0 0 134 281">
+            <rect className="fill-1" y="22" width="67" height="204"/>
+        </svg>,
+        <svg viewBox="0 0 134 281">
+            <ellipse className="fill-2" cx="67" cy="89" rx="67" ry="67"/>
+        </svg>,
+        <svg viewBox="0 0 134 281">
+            <circle className="fill-1" cx="67" cy="89" r="25"/>
+        </svg>,
+    ],
+};
+
+const A2 = {
+    bounds: [167, 281],
+    forms: [
+        <svg viewBox="0 0 167 281" version="1.1">
+            <polygon className="fill-4" points="0,226 83.5,0.1 167,226 "/>
+        </svg>,
+        <svg viewBox="0 0 167 281" version="1.1">
+            <path className="fill-1" d="M112.8,211.8v29.5c0,16.3-13.2,29.5-29.5,29.5s-29.5-13.2-29.5-29.5v-29.5 c0-16.3,13.2-29.5,29.5-29.5S112.8,195.5,112.8,211.8z"/>
+        </svg>,
+    ],
+};
+
+const word = [P1, A2];
+
 
 const styles = theme => ({
     avatar: {
@@ -38,7 +71,7 @@ const styles = theme => ({
         height: 200,
     },
     card: {
-        maxWidth: 450
+        maxWidth: 500
     },
     bullet: {
         display: 'inline-block',
@@ -76,7 +109,15 @@ const styles = theme => ({
         maxWidth: 500,
         backgroundColor: theme.palette.background.paper,
     },
+    extraPadding: {
+        paddingLeft: 50,
+        paddingRight: 50
+    }
 });
+
+const getRandomInt = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+};
 
 class Bio extends Component {
     state = { expanded: false };
@@ -86,7 +127,8 @@ class Bio extends Component {
     };
     render() {
         const { classes } = this.props;
-        const bull = <span className={classes.bullet}>•</span>;
+        const isSlower = getRandomInt(0, 1) ? true : false;
+        const offset = getRandomInt(50, 150);
         return (
             <div>
                 <Grid container justify="center" alignItems="center">
@@ -106,26 +148,33 @@ class Bio extends Component {
                     <Button circular color='github' icon='github' href={"https://github.com/rohitgulia"} target="_blank"/>
                 </Grid>
 
-                <Grid container justify="center" alignItems="center">
-                <Card className={classes.card}>
-                    <CardContent>
-                        <Typography variant="h5" component="h2">
-                            Experienced and Innovative Full Stack Developer adept at customer facing application development, testing and optimizing application performance.
-                            <br/>
-                            Having diversified skills and demonstrated technical leadership ability.
-                        </Typography>
-                    </CardContent>
-                </Card>
-                </Grid>
+                    <Grid container justify="center" alignItems="center">
+                        <Card className={classes.card}>
+                            <CardContent>
+                                <Typography variant="h5" component="h2">
+                                    Experienced and Innovative Full Stack Developer adept at customer facing application development, testing and optimizing application performance.
+                                    <br/>
+                                    Having diversified skills and demonstrated technical leadership ability.
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </Grid>
 
                 <Grid container justify="center" alignItems="center">
                 <Card className={classes.card}>
+                    <Parallax
+                        className="form"
+                        offsetYMin={'-20px'}
+                        offsetYMax={'20px'}
+                        slowerScrollRate={isSlower}
+                    >
                     <CardHeader
                         avatar={
                             <Avatar alt="Weapon" src="/personalwebsite/static/images/weapon.jpg" className={classes.avatar} />
                         }
                         title="Weapons of choice"
                     />
+                    </Parallax>
 
                     <CardContent>
                         <Typography variant="h5" component="h2">
@@ -150,12 +199,19 @@ class Bio extends Component {
 
                 <Grid container justify="center" alignItems="center">
                 <Card className={classes.card}>
+                    <Parallax
+                        className="form"
+                        offsetYMin={'-20px'}
+                        offsetYMax={'20px'}
+                        slowerScrollRate={isSlower}
+                    >
                     <CardHeader
                         avatar={
                             <Avatar alt="Weapon" src="/personalwebsite/static/images/office.png" className={classes.avatar} />
                         }
                         title="Work Experience"
                     />
+                    </Parallax>
 
                     <CardContent>
                         <Typography variant="h5" component="h2">
@@ -257,12 +313,19 @@ class Bio extends Component {
 
                 <Grid container justify="center" alignItems="center">
                 <Card className={classes.card}>
+                    <Parallax
+                        className="form"
+                        offsetYMin={'-20px'}
+                        offsetYMax={'20px'}
+                        slowerScrollRate={isSlower}
+                    >
                     <CardHeader
                         avatar={
                             <Avatar alt="Weapon" src="/personalwebsite/static/images/recommendation.jpg" className={classes.avatar} />
                         }
                         title="Recommendation"
                     />
+                    </Parallax>
 
                     <CardContent>
                         <Typography variant="body1" gutterBottom>
@@ -304,14 +367,21 @@ class Bio extends Component {
 
                 <Grid container justify="center" alignItems="center">
                     <Card className={classes.card}>
+                        <Parallax
+                            className="form"
+                            offsetYMin={'-20px'}
+                            offsetYMax={'20px'}
+                            slowerScrollRate={isSlower}
+                        >
                         <CardHeader
                             avatar={
                                 <Avatar alt="Weapon" src="/personalwebsite/static/images/education.png" className={classes.avatar} />
                             }
                             title="Education"
                         />
+                        </Parallax>
 
-                        <CardContent>
+                        <CardContent className={classes.extraPadding}>
                             <Typography component="p">
                                 Masters of Science in Computer Science - New Jersey Institute of Technology
                             </Typography>

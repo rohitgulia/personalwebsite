@@ -10,6 +10,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import MenuAppBar from './Pages/AppMenu/MenuAppBar';
 import { BrowserRouter } from 'react-router-dom';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 const styles = theme => ({
     root: {
@@ -25,7 +26,9 @@ class App extends Component {
     return (
       <div className="App">
           <HashRouter>
-            <MenuAppBar />
+              <ParallaxProvider>
+                <MenuAppBar />
+              </ParallaxProvider>
           </HashRouter>
       </div>
     );
