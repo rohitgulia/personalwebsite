@@ -24,7 +24,7 @@ class App extends Component {
   render() {
       const { classes } = this.props;
     return (
-      <div className="App">
+      <div className={classes.root}>
           <HashRouter>
               <ParallaxProvider>
                 <MenuAppBar />

@@ -21,10 +21,16 @@ import Home from '@material-ui/icons/Home';
 import Drawer from '@material-ui/core/Drawer';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
+import Education from '../Bio/Education';
+import Recommendation from '../Bio/Recommendation';
+import WorkExperience from '../Bio/WorkExperience';
+import TechnologiesUsed from '../Bio/TechnologiesUsed';
+import ShortTagLine from '../Bio/ShortTagLine';
+import MainBioContainer from '../Bio/MainBioContainer';
 
 const styles = {
     root: {
-        flexGrow: 1,
+        flexGrow: 1
     },
     grow: {
         flexGrow: 1,
@@ -80,11 +86,14 @@ class MenuAppBar extends Component {
                 </AppBar>
 
                     <Switch>
-                        <Paper className={classes.root} elevation={1}>
-                            <Route exact path='/' component={Bio}/>
-                            <Route exact path='/bio' component={Bio}/>
+                            <Route exact path='/' component={MainBioContainer}/>
+                            <Route exact path='/bio' component={MainBioContainer}/>
                             <Route path='/interests' component={Interests}/>
-                        </Paper>
+                            {/*<Route path='/education' component={Education}/>*/}
+                            {/*<Route path='/recommendation' component={Recommendation}/>*/}
+                            {/*<Route path='/workexperience' component={WorkExperience}/>*/}
+                            {/*<Route path='/technologiesused' component={TechnologiesUsed}/>*/}
+                            {/*<Route path='/shorttagline' component={ShortTagLine}/>*/}
                     </Switch>
 
 
