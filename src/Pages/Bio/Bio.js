@@ -9,6 +9,7 @@ import { Parallax } from 'react-scroll-parallax';
 import { withRouter } from "react-router-dom";
 import { Redirect } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
+import { Spring, animated, interpolate} from 'react-spring/renderprops';
 
 const styles = theme => ({
     avatar: {
@@ -76,16 +77,17 @@ class Bio extends Component {
         const offset = getRandomInt(50, 150);
         //const props = useSpring({from: {opacity: 0, marginTop: -1000}, to:{opacity: 1, marginTop: 0},delay: 1000 })
         return (
-            <useSpring from={{ opacity: 0, marginTop: -1000 }} to={{ opacity: 1, marginTop: 0 }}>
-            <div>
-                <Grid container spacing={12}>
-                <Grid container justify="center" alignItems="center" className={'headerFont'} xs={12}>
-                    Rohit
+                <Spring from={{  }} to={{ rotate: '360deg', scale: 0.7 }}>
+                {({ toggle, backgroundColor, fill, rotate, scale, shape }) => (
+                 <animated.div>
+                     <Grid container spacing={12}>
+                <Grid container justify="center" alignItems="center" xs={12}>
+                    <Typography className={'headerFont'}> Rohit </Typography>
                 </Grid>
-                    <Grid container justify="center" alignItems="center" className={'headerFont'} xs={12}>
-                        Gulia
-                    </Grid>
-                    <Grid container justify="center" alignItems="center" className={classes.customPaddingAtBottom} xs={12}></Grid>
+                <Grid container justify="center" alignItems="center" className={'headerFont'} xs={12}>
+                    <Typography className={'headerFont'}> Gulia </Typography>
+                </Grid>
+                <Grid container justify="center" alignItems="center" className={classes.customPaddingAtBottom} xs={12}></Grid>
                 <Grid container justify="center" alignItems="center" xs={12} className={classes.customHeight}>
                     <Reveal animated='rotate'>
                         <Reveal.Content visible>
@@ -112,15 +114,14 @@ class Bio extends Component {
                             Now a days into tea and 1 cup of coffee/day with no sugar.
                             <br/>
                             <br/>
-                            <br/>
-                            <br/>
                             Poke me on LinkedIn or StackOverflow or Email to chat.
                             <br/>
                         </Typography>
                     </Grid>
                 </Grid>
-            </div>
-            </useSpring>
+                 </animated.div>
+                )}
+                </Spring>
         );
 }
 }

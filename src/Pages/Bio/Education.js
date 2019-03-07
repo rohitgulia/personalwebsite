@@ -13,6 +13,14 @@ import Divider from '@material-ui/core/Divider';
 const styles = theme => ({
     avatar: {
         margin: 10,
+    },
+    root: {
+        flexGrow: 1,
+    },
+    title: {
+        padding: theme.spacing.unit * 2,
+        textAlign: 'center',
+        color: theme.palette.text.secondary,
     }
 });
 
@@ -27,38 +35,24 @@ class Education extends Component {
         const isSlower = getRandomInt(0, 1) ? true : false;
         const offset = getRandomInt(50, 150);
         return (
-            <Grid container justify="center" alignItems="center">
-                <Card className={classes.card}>
-                    <Parallax
-                        className="form"
-                        offsetYMin={'-20px'}
-                        offsetYMax={'20px'}
-                        slowerScrollRate={isSlower}
-                    >
-                        <CardHeader
-                            avatar={
-                                <Avatar alt="Weapon" src="/personalwebsite/static/images/education.png" className={classes.avatar} />
-                            }
-                            title="Education"
-                        />
-                    </Parallax>
-
-                    <CardContent className={classes.extraPadding}>
-                        <Typography component="p">
+            <div className={classes.root}>
+                <Grid container spacing={24}>
+                     <Grid item xs={12} className={classes.title}>
+                        <Typography variant="h5" component="h2"> Education </Typography>
+                    </Grid>
+                    <Grid item xs={12} className={classes.title}>
+                        <Typography component="p" className="appDataFont">
                             Masters of Science in Computer Science - New Jersey Institute of Technology
                         </Typography>
                         <br/>
                         <Divider />
                         <br/>
-                        <Typography component="p">
+                        <Typography component="p" className="appDataFont">
                             Bachelor of Engineering in Computer Engineering - Pune University
                         </Typography>
-
-                    </CardContent>
-                    <CardActions className={classes.actions} disableActionSpacing>
-                    </CardActions>
-                </Card>
-            </Grid>
+                </Grid>
+                </Grid>
+            </div>
         )
     }
 }
