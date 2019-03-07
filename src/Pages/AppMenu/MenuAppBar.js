@@ -25,8 +25,8 @@ import Education from '../Bio/Education';
 import Recommendation from '../Bio/Recommendation';
 import WorkExperience from '../Bio/WorkExperience';
 import TechnologiesUsed from '../Bio/TechnologiesUsed';
-import ShortTagLine from '../Bio/ShortTagLine';
 import MainBioContainer from '../Bio/MainBioContainer';
+import ContactMe from '../Bio/ContactMe';
 
 const styles = {
     root: {
@@ -89,11 +89,11 @@ class MenuAppBar extends Component {
                             <Route exact path='/' component={MainBioContainer}/>
                             <Route exact path='/bio' component={MainBioContainer}/>
                             <Route path='/interests' component={Interests}/>
-                            {/*<Route path='/education' component={Education}/>*/}
-                            {/*<Route path='/recommendation' component={Recommendation}/>*/}
-                            {/*<Route path='/workexperience' component={WorkExperience}/>*/}
-                            {/*<Route path='/technologiesused' component={TechnologiesUsed}/>*/}
-                            {/*<Route path='/shorttagline' component={ShortTagLine}/>*/}
+                            <Route path='/education' component={Education}/>
+                            <Route path='/recommendation' component={Recommendation}/>
+                            <Route path='/workexperience' component={WorkExperience}/>
+                            <Route path='/technologiesused' component={TechnologiesUsed}/>
+                            <Route path='/contactMe' component={ContactMe}/>
                     </Switch>
 
 

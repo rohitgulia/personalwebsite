@@ -9,7 +9,8 @@ body {
   line-height: 5.4285em;
     width: 100%;
     height: 100%;
-    background: black
+    background-image: url(Images/background.jpg);
+    cursor: pointer;
 }
 
 #root {

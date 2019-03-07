@@ -9,6 +9,7 @@ import { Parallax } from 'react-scroll-parallax';
 import Avatar from '@material-ui/core/Avatar';
 import CardActions from '@material-ui/core/CardActions';
 import Divider from '@material-ui/core/Divider';
+import { Header, Icon, Image, Button } from 'semantic-ui-react';
 
 const styles = theme => ({
     avatar: {
@@ -24,36 +25,24 @@ const styles = theme => ({
     }
 });
 
-
-const getRandomInt = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-};
-
-class Education extends Component {
+class ContactMe extends React.Component {
     render() {
         const { classes } = this.props;
-        const isSlower = getRandomInt(0, 1) ? true : false;
-        const offset = getRandomInt(50, 150);
-        return (
+        return(
             <Grid className={classes.root}>
                 <Grid container spacing={24}>
-                     <Grid item xs={12} className={classes.title}>
-                        <Typography variant="h5" component="h2"> Education </Typography>
-                    </Grid>
                     <Grid item xs={12} className={classes.title}>
-                        <Typography component="p" className="appDataFont">
-                            Masters of Science in Computer Science - New Jersey Institute of Technology
-                        </Typography>
-                        <br/>
-                        <br/>
-                        <Typography component="p" className="appDataFont">
-                            Bachelor of Engineering in Computer Engineering - Pune University
-                        </Typography>
-                </Grid>
+                        <Typography variant="h5" component="h2"> Get in touch </Typography>
+                    </Grid>
+                    <Grid container justify="center" alignItems="center" xs={12} alignItems="flex-end">
+                        <Button circular color='facebook' icon='facebook' href={"https://www.facebook.com/rohit.gulia.54"} target="_blank" size={'massive'}/>
+                        <Button circular color='linkedin' icon='linkedin' href={"https://www.linkedin.com/in/rohitgulia"} target="_blank" size={'massive'}/>
+                        <Button circular color='github' icon='github' href={"https://github.com/rohitgulia"} target="_blank" size={'massive'}/>
+                    </Grid>
                 </Grid>
             </Grid>
-        )
+        );
     }
 }
 
-export default withStyles(styles)(Education)
+export default withStyles(styles)(ContactMe)

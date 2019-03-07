@@ -3,11 +3,12 @@ import Education from '../Bio/Education';
 import Recommendation from '../Bio/Recommendation';
 import WorkExperience from '../Bio/WorkExperience';
 import TechnologiesUsed from '../Bio/TechnologiesUsed';
-import ShortTagLine from '../Bio/ShortTagLine';
+import ContactMe from '../Bio/ContactMe';
 import Bio from '../Bio/Bio';
 import { useTransition, animated, useSpring } from 'react-spring';
 import Grid from '@material-ui/core/Grid';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
+import Divider from '@material-ui/core/Divider';
 
 const pages = [
     ({style}) => <animated.div style={{...style}}> <Bio></Bio> </animated.div>,
@@ -28,21 +29,21 @@ class MainBioContainer extends React.Component {
     render() {
     return (
         <Parallax pages={7} ref={ref => this.parallax = ref}>
-                <ParallaxLayer offset={0} speed={0.8} onClick={() => this.parallax.scrollTo(1)}> 
+                <ParallaxLayer offset={0} speed={0.8} onClick={() => this.parallax.scrollTo(1)}>
                     <Bio></Bio>
                 </ParallaxLayer>
-                <ParallaxLayer offset={1} speed={1} style={{ opacity: 0.5 }}>
+                <ParallaxLayer offset={0.5} speed={1} style={{ opacity: 0.5 }}>
                     <img src={'/static/images/react.png'} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
                     <img src={'/static/images/react.png'} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
                 </ParallaxLayer>
                 <ParallaxLayer offset={1} speed={0.4} onClick={() => this.parallax.scrollTo(2)}>
                     <TechnologiesUsed></TechnologiesUsed>
                 </ParallaxLayer>
-                <ParallaxLayer offset={2} speed={1} style={{ opacity: 0.3 }}>
+                <ParallaxLayer offset={2.2} speed={1} style={{ opacity: 0.3 }}>
                     <img src={'/static/images/redux.png'} style={{ display: 'block', width: '30%', marginLeft: '65%' }} />
                     <img src={'/static/images/redux.png'} style={{ display: 'block', width: '20%', marginLeft: '25%' }} />
                 </ParallaxLayer>
-                <ParallaxLayer offset={2} speed={0.5} onClick={() => this.parallax.scrollTo(5)}> 
+                <ParallaxLayer offset={2} speed={0.5} onClick={() => this.parallax.scrollTo(5)}>
                     <WorkExperience></WorkExperience>
                 </ParallaxLayer>
                 <ParallaxLayer offset={3} speed={1} style={{ opacity: 0.3 }}>
@@ -57,11 +58,16 @@ class MainBioContainer extends React.Component {
                     <img src={'/static/images/redis.png'} style={{ display: 'block', width: '10%', marginLeft: '25%' }} />
                     <img src={'/static/images/redis.png'} style={{ display: 'block', width: '20%', marginLeft: '70%' }} />
                 </ParallaxLayer>
-                <ParallaxLayer offset={5} speed={0.2} onClick={() => this.parallax.scrollTo(6)}> 
+                <ParallaxLayer offset={5} speed={0.2} onClick={() => this.parallax.scrollTo(6)}>
                     <Recommendation></Recommendation>
                 </ParallaxLayer>
-                <ParallaxLayer offset={6} speed={-0.1} onClick={() => this.parallax.scrollTo(0)}> 
+                <ParallaxLayer offset={6} speed={-0.1} onClick={() => this.parallax.scrollTo(7)}>
                     <Education></Education>
+                </ParallaxLayer>
+                <ParallaxLayer offset={7} speed={-0.4} onClick={() => this.parallax.scrollTo(0)}>
+                    <Divider/>
+                    <br/>
+                    <ContactMe></ContactMe>
                 </ParallaxLayer>
         </Parallax>
 
