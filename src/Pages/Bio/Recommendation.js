@@ -54,6 +54,8 @@ const styles = theme => ({
         padding: theme.spacing.unit * 2,
         textAlign: 'center',
         color: theme.palette.text.secondary,
+        textDecorationLine: 'underline',
+        color: '#2a8486',
     }
   });
 
@@ -87,7 +89,7 @@ class Recommendation extends React.Component {
             <div className={classes.root}>
                 <Grid container spacing={24}>
                     <Grid item xs={12} className={classes.title}>
-                        <Typography variant="h5" component="h2"> Recommendations </Typography>
+                        <Typography variant="h4" component="h1"> Recommendations </Typography>
                     </Grid>
                     <Paper square elevation={0} className={classes.header}>
                         <Typography variant="h5" component="h4">{recommendations[activeStep].label}</Typography>

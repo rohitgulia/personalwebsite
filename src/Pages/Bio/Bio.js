@@ -105,11 +105,8 @@ class Bio extends Component {
                     <Grid>
                         <Typography variant="h5" component="h2" className='shortTagLineFont'>
                             I am Full Stack Developer by mind and runner by LEGS/HEART. Like to focus on clean, simple and understandable code/structure.
-                            <br/>
                             React/Java are my current interests and development stack also, Redis is my go to No/SQL buddy.
-                            <br/>
                             Have built projects from inception to deployment with minimum supervision.
-                            <br/>
                             Now a days into tea and 1 cup of coffee/day with no sugar.
                             <br/>
                             <br/>

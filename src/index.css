@@ -11,6 +11,7 @@ body {
     height: 100%;
     background-image: url(Images/background.jpg);
     cursor: pointer;
+    overflow: hidden;
 }
 
 #root {
@@ -58,14 +59,18 @@ code {
 
 .shortTagLineFont {
     font-family: 'Unica One', cursive !important;
-    font-size: 30px !important;
+    font-size: 35px !important;
 }
 
 .appDataFont, div> span {
     font-family: 'Alegreya Sans SC', sans-serif !important;
-    font-size: 25px !important;
+    font-size: 35px !important;
 }
 
 li {
     text-align: center !important;
+}
+
+h1 {
+    color: #2a8486 !important;
 }

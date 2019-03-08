@@ -19,7 +19,8 @@ const styles = theme => ({
     title: {
         padding: theme.spacing.unit * 2,
         textAlign: 'center',
-        color: theme.palette.text.secondary,
+        color: '#2a8486',
+        textDecorationLine: 'underline'
     }
 });
 
@@ -38,7 +39,7 @@ class TechnologiesUsed extends Component {
             <div className={classes.root}>
                 <Grid container spacing={24}>
                     <Grid item xs={12} className={classes.title}>
-                        <Typography variant="h5" component="h2"> Weapons of choice </Typography>
+                        <Typography variant="h4" component="h1"> Weapons of choice </Typography>
                     </Grid>
                     <Grid item xs={12} className={classes.title}>
                         <Typography variant="h5" component="h2" className="appDataFont">

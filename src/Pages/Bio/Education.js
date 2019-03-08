@@ -20,7 +20,8 @@ const styles = theme => ({
     title: {
         padding: theme.spacing.unit * 2,
         textAlign: 'center',
-        color: theme.palette.text.secondary,
+        textDecorationLine: 'underline',
+        color: '#2a8486'
     }
 });
 
@@ -38,9 +39,9 @@ class Education extends Component {
             <Grid className={classes.root}>
                 <Grid container spacing={24}>
                      <Grid item xs={12} className={classes.title}>
-                        <Typography variant="h5" component="h2"> Education </Typography>
+                        <Typography variant="h4" component="h1"> Education </Typography>
                     </Grid>
-                    <Grid item xs={12} className={classes.title}>
+                    <Grid item xs={12} style={{textAlign:'center'}}>
                         <Typography component="p" className="appDataFont">
                             Masters of Science in Computer Science - New Jersey Institute of Technology
                         </Typography>

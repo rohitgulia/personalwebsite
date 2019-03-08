@@ -25,7 +25,8 @@ const styles = theme => ({
     title: {
         padding: theme.spacing.unit * 2,
         textAlign: 'center',
-        color: theme.palette.text.secondary,
+        color: '#2a8486 !important',
+        textDecorationLine: 'underline'
     }
 });
 
@@ -43,7 +44,7 @@ class WorkExperience extends Component {
             <div className={classes.root}>
                 <Grid container spacing={24}>
                     <Grid item xs={12} className={classes.title}>
-                        <Typography variant="h5" component="h2"> Work Experience </Typography>
+                        <Typography variant="h4" component="h1"> Work Experience </Typography>
                     </Grid>
                     <Grid item xs={12} className={classes.title}>
                         <Typography variant="h5" component="h2" className="appDataFont">
