@@ -17,22 +17,8 @@ import {
     isMobile
 } from "react-device-detect";
 
-const pages = [
-    ({style}) => <animated.div style={{...style}}> <Bio></Bio> </animated.div>,
-    ({style}) => <animated.div style={{...style}}> <TechnologiesUsed></TechnologiesUsed> </animated.div>,
-    ({style}) => <animated.div style={{...style}}> <WorkExperience></WorkExperience> </animated.div>,
-    ({style}) => <animated.div style={{...style}}> <Recommendation></Recommendation> </animated.div>,
-    ({style}) => <animated.div style={{...style}}> <Education></Education> </animated.div>
-]
 
 class MainBioContainer extends React.Component {
-    // const [index, set] = useState(0)
-    // const onClick = useCallback(() => set(state => (state + 1) % 5), [])
-    // const transitions = useTransition(index, p => p, {
-    //     from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
-    //     enter: { opacity: 1, transform: 'translate3d(0,0,0)' },
-    //     leave: { opacity: 0, transform: 'translate3d(0,0,0)' },
-    // })
     render() {
     return (
         <Grid>
@@ -88,21 +74,6 @@ class MainBioContainer extends React.Component {
             <MobileBio></MobileBio>
         </MobileView>
         </Grid>
-
-        // <div className="containerDiv" onClick={onClick}>
-        //     {transitions.map(({ item, props, key }) => {
-        //         const Page = pages[item]
-        //         return <Page key={key} style={props} />
-        //     })}
-        // </div>
-        // <Grid className="containerDiv">
-        //     <Bio></Bio>
-    
-        //     <TechnologiesUsed></TechnologiesUsed>
-        //     <WorkExperience></WorkExperience>
-        //     <Recommendation></Recommendation>
-        //     <Education></Education>
-        // </Grid>
       );
     }
 }
