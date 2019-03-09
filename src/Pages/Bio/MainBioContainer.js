@@ -34,34 +34,34 @@ class MainBioContainer extends React.Component {
                     <Bio></Bio>
                 </ParallaxLayer>
             <ParallaxLayer offset={3.5} speed={1} style={{ opacity: 0.5 }}>
-                <img src={'/static/images/hosting.svg'} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
-                <img src={'/static/images/night.svg'} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
+                <img src={'/personalwebsite/static/images/hosting.svg'} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
+                <img src={'/personalwebsite/static/images/night.svg'} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
             </ParallaxLayer>
                 <ParallaxLayer offset={0.8} speed={1} style={{ opacity: 0.5 }}>
-                    <img src={'/static/images/react.png'} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
-                    <img src={'/static/images/redux.png'} style={{ display: 'block', width: '10%', marginLeft: '10%' }} />
+                    <img src={'/personalwebsite/static/images/react.png'} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
+                    <img src={'/personalwebsite/static/images/redux.png'} style={{ display: 'block', width: '10%', marginLeft: '10%' }} />
                 </ParallaxLayer>
                 <ParallaxLayer offset={isMobile ? 2 : 1} speed={0.4} onClick={() => this.parallax.scrollTo(isMobile ? 3 :2)}>
                     <TechnologiesUsed></TechnologiesUsed>
                 </ParallaxLayer>
                 <ParallaxLayer offset={2.2} speed={1} style={{ opacity: 0.3 }}>
-                    <img src={'/static/images/redux.png'} style={{ display: 'block', width: '30%', marginLeft: '65%' }} />
-                    <img src={'/static/images/react.png'} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
+                    <img src={'/personalwebsite/static/images/redux.png'} style={{ display: 'block', width: '30%', marginLeft: '65%' }} />
+                    <img src={'/personalwebsite/static/images/react.png'} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
                 </ParallaxLayer>
                 <ParallaxLayer offset={isMobile ? 3 : 2} speed={0.5} onClick={() => this.parallax.scrollTo(isMobile ? 6 :4)}>
                     <WorkExperience></WorkExperience>
                 </ParallaxLayer>
                 <ParallaxLayer offset={3} speed={1} style={{ opacity: 0.3 }}>
-                    <img src={'/static/images/binary.png'} style={{ display: 'block', width: '20%', marginLeft: '5%' }} />
-                    <img src={'/static/images/binary.png'} style={{ display: 'block', width: '20%', marginLeft: '80%' }} />
+                    <img src={'/personalwebsite/static/images/binary.png'} style={{ display: 'block', width: '20%', marginLeft: '5%' }} />
+                    <img src={'/personalwebsite/static/images/binary.png'} style={{ display: 'block', width: '20%', marginLeft: '80%' }} />
                 </ParallaxLayer>
                 <ParallaxLayer offset={4.5} speed={1} style={{ opacity: 0.5 }}>
-                    <img src={'/static/images/java.png'} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
-                    <img src={'/static/images/redis.png'} style={{ display: 'block', width: '20%', marginLeft: '70%' }} />
+                    <img src={'/personalwebsite/static/images/java.png'} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
+                    <img src={'/personalwebsite/static/images/redis.png'} style={{ display: 'block', width: '20%', marginLeft: '70%' }} />
                 </ParallaxLayer>
                 <ParallaxLayer offset={1.7} speed={1} style={{ opacity: 0.3 }}>
-                    <img src={'/static/images/redis.png'} style={{ display: 'block', width: '10%', marginLeft: '25%' }} />
-                    <img src={'/static/images/java.png'} style={{ display: 'block', width: '15%', marginLeft: '75%' }} />
+                    <img src={'/personalwebsite/static/images/redis.png'} style={{ display: 'block', width: '10%', marginLeft: '25%' }} />
+                    <img src={'/personalwebsite/static/images/java.png'} style={{ display: 'block', width: '15%', marginLeft: '75%' }} />
                 </ParallaxLayer>
                 <ParallaxLayer offset={isMobile ? 6 : 4} speed={0.2} onClick={() => this.parallax.scrollTo(isMobile ? 6.5 : 5)}>
                     <Recommendation></Recommendation>

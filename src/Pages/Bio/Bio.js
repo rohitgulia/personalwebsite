@@ -90,10 +90,10 @@ class Bio extends Component {
                 <Grid container justify="center" alignItems="center" xs={12} className={classes.customHeight}>
                     <Reveal animated='rotate'>
                         <Reveal.Content visible>
-                            <Avatar alt="Rohit Singh Gulia" src="/static/images/profilePic.jpg" className={classes.bigAvatar} />
+                            <Avatar alt="Rohit Singh Gulia" src="/personalwebsite/static/images/profilePic.jpg" className={classes.bigAvatar} />
                         </Reveal.Content>
                         <Reveal.Content hidden>
-                            <Avatar alt="Rohit Singh Gulia" src="/static/images/race3.jpg" className={classes.bigAvatar} />
+                            <Avatar alt="Rohit Singh Gulia" src="/personalwebsite/static/images/race3.jpg" className={classes.bigAvatar} />
                         </Reveal.Content>
                     </Reveal>
                 </Grid>
