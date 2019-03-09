@@ -46,7 +46,6 @@ class Education extends Component {
                             Masters of Science in Computer Science - New Jersey Institute of Technology
                         </Typography>
                         <br/>
-                        <br/>
                         <Typography component="p" className="appDataFont">
                             Bachelor of Engineering in Computer Engineering - Pune University
                         </Typography>
