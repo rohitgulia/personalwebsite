@@ -50,7 +50,7 @@ class WorkExperience extends Component {
                         <Typography variant="h5" component="h2" className="appDataFont">
                             Limosys Software
                             <br />
-                            Full Stack Developer (2016 - Current)
+                            Full Stack Developer (2016 - 2019)
                         </Typography>
                     </Grid>
                     <Grid item xs={12} alignItems="center" justify="center">
@@ -65,11 +65,11 @@ class WorkExperience extends Component {
                                 </ListItem>
                                 <ListItem>
                                     <ListItemText>
-                                        Developing a full-stack web application to handle all aspects of black car reservation process.
+                                        Developed a full-stack web application to handle all aspects of black car reservation process.
                                         <br/>
-                                        Backend is being developed using JAX-RS, Jersey, Redis, SQL and front end will leverage the awesome capabilities
+                                        Backend was being developed using JAX-RS, Jersey, Redis, SQL and front end used
                                         <br/>
-                                        of React and Redux.
+                                        React and Redux.
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem>
@@ -81,12 +81,12 @@ class WorkExperience extends Component {
                                 </ListItem>
                                 <ListItem>
                                     <ListItemText>
-                                        Handling deployment of web applications and troubleshooting deployment issues.
+                                        Handled deployment of web applications and troubleshoot deployment issues.
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem>
                                     <ListItemText>
-                                        Supporting existing system of web applications and engaging in development of new functionality and features.
+                                        Supported existing system of web applications and engaged in development of new functionality and features.
                                     </ListItemText>
                                 </ListItem>
                             </List>
