@@ -50,10 +50,9 @@ class TechnologiesUsed extends Component {
                     </Grid>
                     <Grid item xs={12}>
                         <Typography component="p" className="appDataFont">
-                            Developing full-stack web application for ground transportation fleet management industry,
-                            using React that will allow users to book a ride and manage all aspects of reservation.
-                            The backend, built using Java, Jax-Rs, Redis, MySql will take advantage of well-developed RESTful API built with the help of Jersey
-                            and using authentication with JWT.
+                            Developing and maintaining full-stack web applications i.e. e-commerce,
+                            iot, sales and customer web application at Vivint Solar
+                            using nodeJS, reactJS, aws, graphql, couchdb, elasticsearch, typescript.
                         </Typography>
                     </Grid>
                 </Grid>
