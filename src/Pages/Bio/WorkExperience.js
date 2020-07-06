@@ -46,6 +46,50 @@ class WorkExperience extends Component {
                     <Grid item xs={12} className={classes.title}>
                         <Typography variant="h4" component="h1"> Work Experience </Typography>
                     </Grid>
+
+                    <Grid item xs={12} className={classes.title}>
+                        <Typography variant="h5" component="h2" className="appDataFont">
+                            Vivint Solar
+                            <br />
+                            Full Stack Developer (2019-Current)
+                        </Typography>
+                    </Grid>
+
+                    <Grid item xs={12} className="appDataFont">
+                            <List className={classes.root}>
+                                <ListItem>
+                                    <ListItemText>
+                                        Analyze user needs and software requirements to determine feasibility of design within time and cost constraints.
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText>
+                                        Working on Iot devices which collects data from Solar panel and gives overview of the overall energy production from system.
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText>
+                                        Creating new functionalities to enhance React Dashboard usability.
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText>
+                                        Creating AWS Lambdas and api endpoints to be consumed by the dashboard.
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText>
+                                        Handled payment module for e-commerce web application.
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText>
+                                        Updating and maintaining microservices used for client web application.
+                                    </ListItemText>
+                                </ListItem>
+                            </List>
+                    </Grid>
+
                     <Grid item xs={12} className={classes.title}>
                         <Typography variant="h5" component="h2" className="appDataFont">
                             Limosys Software
@@ -84,51 +128,8 @@ class WorkExperience extends Component {
                                         Handled deployment of web applications and troubleshoot deployment issues.
                                     </ListItemText>
                                 </ListItem>
-                                <ListItem>
-                                    <ListItemText>
-                                        Supported existing system of web applications and engaged in development of new functionality and features.
-                                    </ListItemText>
-                                </ListItem>
                             </List>
                         </Typography>
-                    </Grid>
-
-                    <Grid item xs={12} className={classes.title}>
-                        <Typography variant="h5" component="h2" className="appDataFont">
-                            UPS
-                            <br />
-                            Intern (2015-2016)
-                        </Typography>
-                    </Grid>
-
-                    <Grid item xs={12} className="appDataFont">
-                            <List className={classes.root}>
-                                <ListItem>
-                                    <ListItemText>
-                                        Contributed towards the successful release of UPS Shipping Automation software “WorldShip”.
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemText>
-                                        Developed customized test cases and enhanced existing test cases which made regression testing comprehensive.
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemText>
-                                        Executed and analyzed test cases and used HP quality center to manage the whole testing process.
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemText>
-                                        Communicated with developers when needed to discuss with them the failed test cases.
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemText>
-                                        Gave presentation on how windows 10 affected the product and various types of testing done on the new OS.
-                                    </ListItemText>
-                                </ListItem>
-                            </List>
                     </Grid>
 
                 </Grid>

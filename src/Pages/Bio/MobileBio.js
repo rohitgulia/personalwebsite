@@ -124,7 +124,7 @@ class MobileBio extends Component {
                         <CardContent>
                             <Typography variant="h5" component="h2">
                                 I am Full Stack Developer by mind and runner by LEGS/HEART. Like to focus on clean, simple and understandable code/structure.
-                                React/Java are my current interests and development stack also, Redis is my go to No/SQL buddy.
+                                NodeJS/React are my current interests and development stack also.
                                 Have built projects from inception to deployment with minimum supervision.
                                 Now a days into tea and 1 cup of coffee/day with no sugar.
                                 <br/>

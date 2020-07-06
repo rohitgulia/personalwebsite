@@ -43,7 +43,7 @@ class TechnologiesUsed extends Component {
                     </Grid>
                     <Grid item xs={12} className={classes.title}>
                         <Typography variant="h5" component="h2" className="appDataFont">
-                            JAVA, REACT JS, JSP, REDIS, DOCKER, SQL
+                            NODEJS, JAVA, REACT JS, AWS, ELASTICSEARCH, GRAPHQL, COUCHDB, JSP, REDIS, DOCKER, SQL
                             <br />
                             JAX-RS, GIT, SVN, HTML5, CSS, JQUERY
                         </Typography>
