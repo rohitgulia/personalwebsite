@@ -112,10 +112,10 @@ export default function SimpleContainer() {
                                     Believe in staying active whether its by running or going to gym or hiking.
                                 </List.Item>
                                 <List.Item>
-                                    P2 paragliding pilot. Out of tocuh for a while though since Toronto doesn't have that many mountains to fly from.
+                                    P2 paragliding pilot. Out of touch for a while though since Toronto doesn't have that many mountains to fly from.
                                 </List.Item>
                                 <List.Item>
-                                    Like to eat clean and whole foods.
+                                    Like to eat clean/whole foods.
                                 </List.Item>
                             </List>
                             </Segment>
