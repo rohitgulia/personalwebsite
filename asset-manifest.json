@@ -1,18 +1,25 @@
 {
-  "main.css": "/personalwebsite/static/css/main.b039c280.chunk.css",
-  "main.js": "/personalwebsite/static/js/main.2bc405b3.chunk.js",
-  "main.js.map": "/personalwebsite/static/js/main.2bc405b3.chunk.js.map",
-  "static/css/1.bf7a224a.chunk.css": "/personalwebsite/static/css/1.bf7a224a.chunk.css",
-  "static/js/1.6e7c566e.chunk.js": "/personalwebsite/static/js/1.6e7c566e.chunk.js",
-  "static/js/1.6e7c566e.chunk.js.map": "/personalwebsite/static/js/1.6e7c566e.chunk.js.map",
-  "runtime~main.js": "/personalwebsite/static/js/runtime~main.2d45b162.js",
-  "runtime~main.js.map": "/personalwebsite/static/js/runtime~main.2d45b162.js.map",
-  "static/media/semantic.min.css": "/personalwebsite/static/media/brand-icons.a1a749e8.svg",
-  "static/media/index.css": "/personalwebsite/static/media/background.a9532bb2.jpg",
-  "static/media/logo.svg": "/personalwebsite/static/media/logo.5d5d9eef.svg",
-  "static/css/1.bf7a224a.chunk.css.map": "/personalwebsite/static/css/1.bf7a224a.chunk.css.map",
-  "static/css/main.b039c280.chunk.css.map": "/personalwebsite/static/css/main.b039c280.chunk.css.map",
-  "index.html": "/personalwebsite/index.html",
-  "precache-manifest.dbe7e3ebced61a002dac2cafcdac9100.js": "/personalwebsite/precache-manifest.dbe7e3ebced61a002dac2cafcdac9100.js",
-  "service-worker.js": "/personalwebsite/service-worker.js"
+  "files": {
+    "main.css": "/personalwebsite/static/css/main.3fba2114.chunk.css",
+    "main.js": "/personalwebsite/static/js/main.e7d4efac.chunk.js",
+    "main.js.map": "/personalwebsite/static/js/main.e7d4efac.chunk.js.map",
+    "runtime-main.js": "/personalwebsite/static/js/runtime-main.b0b09733.js",
+    "runtime-main.js.map": "/personalwebsite/static/js/runtime-main.b0b09733.js.map",
+    "static/css/2.fe8e21cb.chunk.css": "/personalwebsite/static/css/2.fe8e21cb.chunk.css",
+    "static/js/2.fe714d78.chunk.js": "/personalwebsite/static/js/2.fe714d78.chunk.js",
+    "static/js/2.fe714d78.chunk.js.map": "/personalwebsite/static/js/2.fe714d78.chunk.js.map",
+    "index.html": "/personalwebsite/index.html",
+    "static/css/2.fe8e21cb.chunk.css.map": "/personalwebsite/static/css/2.fe8e21cb.chunk.css.map",
+    "static/css/main.3fba2114.chunk.css.map": "/personalwebsite/static/css/main.3fba2114.chunk.css.map",
+    "static/js/2.fe714d78.chunk.js.LICENSE.txt": "/personalwebsite/static/js/2.fe714d78.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/personalwebsite/static/media/outline-icons.ddae9b1b.woff",
+    "static/media/logo.103b5fa1.svg": "/personalwebsite/static/media/logo.103b5fa1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b0b09733.js",
+    "static/css/2.fe8e21cb.chunk.css",
+    "static/js/2.fe714d78.chunk.js",
+    "static/css/main.3fba2114.chunk.css",
+    "static/js/main.e7d4efac.chunk.js"
+  ]
 }
